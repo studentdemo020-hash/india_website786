@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About India — Geography, Symbols & Demographics</title>
+  <meta name="description" content="Explore India's geography, national symbols, climate zones, population demographics, and regional breakdown.">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About India</a></li>
+          <li><a href="history.html" class="nav-link">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link active">About India</a>
+    <a href="history.html" class="mobile-nav-link">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO HEADER -->
+    <section class="hero" style="background-image: url('images/hero_taj_mahal.jpg'); min-height: 50vh;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">🌏 Land of Diversity & Unity</div>
+        <h1 class="hero-title">About <span>India</span></h1>
+        <p class="hero-subtitle">
+          The 7th largest nation by land area and the most populous country in the world — a vibrant mosaic of landscapes, ecosystems, and ancient national symbols.
+        </p>
+      </div>
+    </section>
+
+    <!-- GEOGRAPHY SECTION -->
+    <section id="geography" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Physical Features</span>
+        <h2 class="section-title">Geography & Landscapes</h2>
+        <p class="section-description">
+          Stretching from the 8,000-meter peaks of the northern Himalayas to the tropical coconut palms of Kanyakumari.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--saffron-main);">🏔️ The Himalayan Wall</h3>
+            <p class="card-text">Forming the northern boundary, the Himalayas act as a natural climatic barrier protecting the subcontinent while nurturing major sacred rivers like the Ganges, Indus, and Brahmaputra.</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--gold-accent);">🏜️ The Great Thar Desert</h3>
+            <p class="card-text">Spanning Rajasthan, the Thar Desert features rolling sand dunes, vibrant folk arts, and historic fortresses built into golden sandstone mountains.</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--emerald-main);">🌴 Coastal Ghats & Backwaters</h3>
+            <p class="card-text">Flanked by the Western and Eastern Ghats mountain ranges, India features over 7,500 km of coastline bordering the Arabian Sea and Bay of Bengal.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REGIONAL EXPLORER SECTION -->
+    <section class="section" style="background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-glass);">
+      <div class="section-header reveal">
+        <span class="section-tag">Interactive Breakdown</span>
+        <h2 class="section-title">Six Distinct Regions</h2>
+        <p class="section-description">Select a region to learn about its unique climate, culture, and key states.</p>
+      </div>
+
+      <div class="timeline-tabs reveal" style="margin-bottom: 2rem;">
+        <button class="tab-btn active" data-era="north">North India</button>
+        <button class="tab-btn" data-era="south">South India</button>
+        <button class="tab-btn" data-era="east">East India</button>
+        <button class="tab-btn" data-era="west">West India</button>
+        <button class="tab-btn" data-era="northeast">North-East India</button>
+      </div>
+
+      <div id="region-cards-container" class="card-grid">
+        <article class="glass-card timeline-item" data-era="north">
+          <div class="card-body">
+            <h3 class="card-title">North India</h3>
+            <p class="card-text"><strong>Key States:</strong> Delhi, Punjab, Jammu & Kashmir, Himachal Pradesh, Uttar Pradesh.</p>
+            <p class="card-text">Home to the Taj Mahal, Golden Temple, Himalayan hill stations, and royal Mughlai cuisine.</p>
+          </div>
+        </article>
+
+        <article class="glass-card timeline-item" data-era="south" style="display: none;">
+          <div class="card-body">
+            <h3 class="card-title">South India</h3>
+            <p class="card-text"><strong>Key States:</strong> Kerala, Tamil Nadu, Karnataka, Telangana, Andhra Pradesh.</p>
+            <p class="card-text">Renowned for Dravidian temples, Ayurveda, coconut-infused curries, tech hubs like Bengaluru, and Alleppey backwaters.</p>
+          </div>
+        </article>
+
+        <article class="glass-card timeline-item" data-era="east" style="display: none;">
+          <div class="card-body">
+            <h3 class="card-title">East India</h3>
+            <p class="card-text"><strong>Key States:</strong> West Bengal, Odisha, Bihar, Jharkhand.</p>
+            <p class="card-text">Famous for literary heritage, Victoria Memorial in Kolkata, Konark Sun Temple, and mouthwatering sweets like Rasgulla.</p>
+          </div>
+        </article>
+
+        <article class="glass-card timeline-item" data-era="west" style="display: none;">
+          <div class="card-body">
+            <h3 class="card-title">West India</h3>
+            <p class="card-text"><strong>Key States:</strong> Maharashtra, Gujarat, Goa, Rajasthan.</p>
+            <p class="card-text">Home to Mumbai (the financial & Bollywood capital), sun-kissed beaches of Goa, and majestic palaces of Jaipur.</p>
+          </div>
+        </article>
+
+        <article class="glass-card timeline-item" data-era="northeast" style="display: none;">
+          <div class="card-body">
+            <h3 class="card-title">North-East India</h3>
+            <p class="card-text"><strong>Key States:</strong> Assam, Meghalaya, Sikkim, Nagaland, Arunachal Pradesh, Manipur, Mizoram, Tripura.</p>
+            <p class="card-text">Known as the 'Seven Sisters', featuring living root bridges, tea gardens of Assam, and pristine Himalayan valleys.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NATIONAL SYMBOLS SECTION -->
+    <section id="symbols" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Identity & Heritage</span>
+        <h2 class="section-title">National Symbols of India</h2>
+        <p class="section-description">Representing the sovereignty, pride, and spiritual consciousness of the nation.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/bengal_tiger.jpg" alt="Royal Bengal Tiger">
+            <span class="card-tag">National Animal</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Royal Bengal Tiger</h3>
+            <p class="card-text">Symbolizing grace, power, and agility. India is home to Project Tiger, safeguarding over 3,000 wild tigers across 54 reserves.</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/diwali_festival.jpg" alt="Lotus Flower & Diyas">
+            <span class="card-tag">National Flower</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">The Sacred Lotus</h3>
+            <p class="card-text">Representing purity, knowledge, and spiritual enlightenment as it blooms untouched above muddy waters.</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/ancient_temple.jpg" alt="Ashoka Lion Capital Emblem">
+            <span class="card-tag">State Emblem</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Lion Capital of Ashoka</h3>
+            <p class="card-text">Adapted from the Emperor Ashoka pillar at Sarnath, featuring four lions standing back-to-back above the Dharma Chakra wheel with the motto <em>Satyameva Jayate</em> (Truth Alone Triumphs).</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Exploring the physical and cultural geography of India.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="history.html">History & Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Sections</h4>
+        <ul class="footer-links">
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="tourism.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Travel Form</a></li>
+          <li><a href="contact.html#faqs">Travel FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase. English Version 1.0.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>

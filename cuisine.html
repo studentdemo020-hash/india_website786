@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuisine of India — Regional Flavors & Aromatic Spices</title>
+  <meta name="description" content="Explore India's diverse regional dishes, dietary options (Vegetarian, Vegan, Non-Veg), spice guide, and traditional sweets.">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About India</a></li>
+          <li><a href="history.html" class="nav-link">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link active">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About India</a>
+    <a href="history.html" class="mobile-nav-link">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link active">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('images/cuisine_spread.jpg'); min-height: 55vh;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">🥘 A Feast For The Senses</div>
+        <h1 class="hero-title">Culinary Journey Across <span>India</span></h1>
+        <p class="hero-subtitle">
+          From fiery Rajasthani curries and creamy Mughlai gravies to fermented South Indian rice dosas and delicate Bengali sweets.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CUISINE FILTER -->
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Interactive Gastronomy</span>
+        <h2 class="section-title">Explore Regional Dishes & Flavors</h2>
+        <p class="section-description">Filter by region or dietary preference to discover legendary dishes.</p>
+      </div>
+
+      <div class="filter-container reveal">
+        <button class="filter-chip active" data-filter="all">All Specialties</button>
+        <button class="filter-chip" data-filter="north">North Indian</button>
+        <button class="filter-chip" data-filter="south">South Indian</button>
+        <button class="filter-chip" data-filter="west">West Indian</button>
+        <button class="filter-chip" data-filter="east">East Indian</button>
+        <button class="filter-chip" data-filter="veg">Vegetarian / Vegan</button>
+        <button class="filter-chip" data-filter="sweet">Sweets & Desserts</button>
+      </div>
+
+      <div class="card-grid">
+        <!-- Dish 1 -->
+        <article class="glass-card cuisine-card reveal" data-category="north veg">
+          <div class="card-img-wrapper">
+            <img src="images/cuisine_spread.jpg" alt="Butter Paneer & Naan">
+            <span class="card-tag">North • Veg</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Paneer Butter Masala & Garlic Naan</h3>
+            <p class="card-text">Soft cottage cheese cubes simmered in a velvety tomato, cashew nut, and butter sauce served hot alongside tandoor-baked bread.</p>
+            <span style="color: var(--saffron-main); font-weight: 700; font-size: 0.85rem;">Spice Level: 🌶️🌶️ (Mild to Medium)</span>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="glass-card cuisine-card reveal" data-category="south veg">
+          <div class="card-img-wrapper">
+            <img src="images/kerala_backwaters.jpg" alt="South Indian Masala Dosa">
+            <span class="card-tag">South • Veg / Vegan</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Crispy Masala Dosa & Sambar</h3>
+            <p class="card-text">Fermented rice and lentil crepe stuffed with spiced mashed potatoes, paired with fresh coconut chutney and piping hot lentil stew.</p>
+            <span style="color: var(--saffron-main); font-weight: 700; font-size: 0.85rem;">Spice Level: 🌶️🌶️ (Flavorful)</span>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="glass-card cuisine-card reveal" data-category="north">
+          <div class="card-img-wrapper">
+            <img src="images/cuisine_spread.jpg" alt="Hyderabadi Dum Biryani">
+            <span class="card-tag">North / Central • Royal</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hyderabadi Dum Biryani</h3>
+            <p class="card-text">Fragrant basmati rice layered with marinated meat or vegetables, saffron, mint, and caramelized onions sealed and slow-cooked in a sealed clay pot.</p>
+            <span style="color: var(--saffron-main); font-weight: 700; font-size: 0.85rem;">Spice Level: 🌶️🌶️🌶️ (Rich & Aromatic)</span>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="glass-card cuisine-card reveal" data-category="west veg">
+          <div class="card-img-wrapper">
+            <img src="images/hero_taj_mahal.jpg" alt="Mumbai Vada Pav">
+            <span class="card-tag">West • Street Food</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mumbai Vada Pav & Pav Bhaji</h3>
+            <p class="card-text">The iconic Mumbai vegetarian burger: spiced potato fritter in a soft bun served with fried green chilies and garlic chutney.</p>
+            <span style="color: var(--saffron-main); font-weight: 700; font-size: 0.85rem;">Spice Level: 🌶️🌶️🌶️ (Spicy & Tangy)</span>
+          </div>
+        </article>
+
+        <!-- Dish 5 -->
+        <article class="glass-card cuisine-card reveal" data-category="east sweet">
+          <div class="card-img-wrapper">
+            <img src="images/diwali_festival.jpg" alt="Bengali Rasgulla & Gulab Jamun">
+            <span class="card-tag">East • Sweet</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Bengali Rasgulla & Gulab Jamun</h3>
+            <p class="card-text">Spongy chhena cottage cheese dumplings soaked in clear cardamom sugar syrup — the quintessence of Bengali sweet craftsmanship.</p>
+            <span style="color: var(--gold-accent); font-weight: 700; font-size: 0.85rem;">Dessert • Pure Indulgence 🍯</span>
+          </div>
+        </article>
+
+        <!-- Dish 6 -->
+        <article class="glass-card cuisine-card reveal" data-category="south">
+          <div class="card-img-wrapper">
+            <img src="images/kerala_backwaters.jpg" alt="Kerala Fish Moilee">
+            <span class="card-tag">South • Seafood</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kerala Coconut Fish Moilee</h3>
+            <p class="card-text">Fresh coastal kingfish gently simmered in coconut milk, green chilies, curry leaves, mustard seeds, and turmeric.</p>
+            <span style="color: var(--saffron-main); font-weight: 700; font-size: 0.85rem;">Spice Level: 🌶️ (Silky & Mild)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SPICE ROUTE INFOGRAPHIC SECTION -->
+    <section class="section" style="background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-glass);">
+      <div class="section-header reveal">
+        <span class="section-tag">Essential Ingredients</span>
+        <h2 class="section-title">The Magic of Indian Spices</h2>
+        <p class="section-description">For thousands of years, Indian spices drove global trade routes and Ayurvedic healing.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--gold-accent);">🟡 Turmeric (Haldi)</h3>
+            <p class="card-text">Golden antioxidant powerhouse used in almost every curry for bright color, earthy flavor, and anti-inflammatory wellness.</p>
+          </div>
+        </div>
+
+        <div class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--saffron-main);">🔴 Kashmiri Saffron (Kesar)</h3>
+            <p class="card-text">Harvested from crocus flowers in Pampore, Kashmir. Known as the world's most precious spice for biryanis and desserts.</p>
+          </div>
+        </div>
+
+        <div class="glass-card reveal">
+          <div class="card-body">
+            <h3 class="card-title" style="color: var(--emerald-main);">🟢 Green Cardamom (Elaichi)</h3>
+            <p class="card-text">The queen of spices, grown in the Western Ghats. Adds sweet floral warmth to Masala Chai tea and royal curries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Celebrating the flavors, spices, and hospitality of Indian food.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="cuisine.html">Cuisine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Regions</h4>
+        <ul class="footer-links">
+          <li><a href="cuisine.html">North Indian</a></li>
+          <li><a href="cuisine.html">South Indian</a></li>
+          <li><a href="cuisine.html">Street Food</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Travel</h4>
+        <ul class="footer-links">
+          <li><a href="tourism.html">Destinations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>

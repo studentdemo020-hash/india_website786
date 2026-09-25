@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Travel Info — Incredible India</title>
+  <meta name="description" content="Plan your trip to India with essential travel FAQs, safety tips, visa guidelines, and interactive contact feedback form.">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About India</a></li>
+          <li><a href="history.html" class="nav-link">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About India</a>
+    <a href="history.html" class="mobile-nav-link">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link active">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('images/hero_taj_mahal.jpg'); min-height: 45vh;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">💬 Get In Touch & Travel Tips</div>
+        <h1 class="hero-title">Contact & <span>Travel Info</span></h1>
+        <p class="hero-subtitle">
+          Have questions about visiting India, visa guidelines, or feedback on our static portal? Send us a message below.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM & FAQS CONTAINER -->
+    <section class="section">
+      <div class="contact-container">
+        
+        <!-- Interactive Form -->
+        <div class="contact-form reveal">
+          <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--gold-accent);">
+            Send Us Your Inquiry
+          </h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">
+            Static form submission with interactive instant client validation.
+          </p>
+
+          <form id="travel-contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Full Name *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email Address *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="e.g. eleanor@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-interest">Primary Interest</label>
+              <select id="form-interest" class="form-select">
+                <option value="tourism">Tourism & Travel Planning</option>
+                <option value="culture">History & Heritage Information</option>
+                <option value="cuisine">Regional Food & Cooking</option>
+                <option value="feedback">General Website Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Your Message *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Tell us what you'd like to explore in India..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Message ➔
+            </button>
+          </form>
+        </div>
+
+        <!-- Travel FAQs Accordion -->
+        <div class="reveal" id="faqs">
+          <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--saffron-main);">
+            Frequently Asked Questions
+          </h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem;">
+            Essential advice for travelers visiting India for the first time.
+          </p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <button class="accordion-header">
+                <span>🗓️ What is the best time of year to visit India?</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                The peak travel season is from <strong>October to March</strong> when the weather across most of the country is pleasantly cool and dry. Monsoon season runs from June to September.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>🛂 Do international visitors need a visa for India?</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                Yes, most travelers require a visa. India offers a convenient electronic visa (<strong>e-Visa</strong>) for citizens of over 160 countries, which can be easily applied for online prior to arrival.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>🥗 Is it easy to find vegetarian or vegan food in India?</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                India is the world's most vegetarian-friendly nation! Over 30-40% of the population is strictly vegetarian, and all packaged food is clearly marked with a green dot symbol for vegetarian items.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>🚂 What is the best way to travel around India?</span>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-body">
+                Indian Railways connects virtually every corner of the nation and offers a scenic, memorable journey. High-speed Vande Bharat express trains and domestic flights are ideal for longer distances.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Providing essential information and guidance for travelers.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="history.html">History & Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="tourism.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faqs">Travel FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incredible India — Land of Infinite Wonders & Timeless Heritage</title>
+  <meta name="description"
+    content="Discover Incredible India: explore rich culture, ancient history, diverse regional cuisines, majestic monuments, and unforgettable travel destinations.">
+  <meta property="og:title" content="Incredible India — Land of Infinite Wonders">
+  <meta property="og:description"
+    content="An interactive static web portal showcasing the beauty, heritage, food, and tourism of India.">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About India</a></li>
+          <li><a href="history.html" class="nav-link">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switch & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link active">Home</a>
+    <a href="about.html" class="mobile-nav-link">About India</a>
+    <a href="history.html" class="mobile-nav-link">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('images/hero_taj_mahal.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">✨ Experience Timeless Grandeur</div>
+        <h1 class="hero-title">Discover the Land of <span>Infinite Wonders</span></h1>
+        <p class="hero-subtitle">
+          From the majestic snow-capped peaks of the Himalayas to the golden sands of Thar and tranquil backwaters of
+          Kerala — immerse yourself in 5,000 years of civilization, vibrant festivals, and royal gastronomy.
+        </p>
+        <div class="hero-actions">
+          <a href="tourism.html" class="btn btn-primary">Explore Destinations ➔</a>
+          <a href="history.html" class="btn btn-secondary">Discover History</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT STATS BANNER -->
+    <div class="stats-banner reveal">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="1400" data-suffix="M+">0</div>
+          <div class="stat-label">Diverse Population</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="28" data-suffix=" States">0</div>
+          <div class="stat-label">& 8 Union Territories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="42" data-suffix="">0</div>
+          <div class="stat-label">UNESCO World Heritage Sites</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="22" data-suffix=" Languages">0</div>
+          <div class="stat-label">Officially Recognized</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLARS OF INDIA SECTION -->
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Explore By Theme</span>
+        <h2 class="section-title">The Pillars of Incredible India</h2>
+        <p class="section-description">
+          Journey through five distinct facets that define the heart, soul, and heritage of the subcontinent.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <!-- About Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/hero_taj_mahal.jpg" alt="Geography & Demographics">
+            <span class="card-tag">Overview</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Geography & Demographics</h3>
+            <p class="card-text">Bounded by the great Himalayas in the north and surrounded by three oceans, India
+              boasts desert dunes, rainforests, and fertile river plains.</p>
+            <a href="about.html" class="btn btn-secondary" style="width: 100%;">Learn More ➔</a>
+          </div>
+        </article>
+
+        <!-- History Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/ancient_temple.jpg" alt="Ancient Indian Heritage">
+            <span class="card-tag">5,000+ Years</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">History & Culture</h3>
+            <p class="card-text">From the Indus Valley Civilization to golden empires, classical art forms, and vibrant
+              festivals celebrated with color and light.</p>
+            <a href="history.html" class="btn btn-secondary" style="width: 100%;">Explore History ➔</a>
+          </div>
+        </article>
+
+        <!-- Cuisine Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/cuisine_spread.jpg" alt="Indian Culinary Wonders">
+            <span class="card-tag">Gastronomy</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Regional Cuisines</h3>
+            <p class="card-text">An explosion of aromatic spices, royal Mughlai biryanis, crispy South Indian dosas, and
+              exquisite traditional sweets.</p>
+            <a href="cuisine.html" class="btn btn-secondary" style="width: 100%;">Taste Dishes ➔</a>
+          </div>
+        </article>
+
+        <!-- Tourism Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/kerala_backwaters.jpg" alt="Kerala Backwaters Tourism">
+            <span class="card-tag">Travel</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Tourism & Destinations</h3>
+            <p class="card-text">Plan your trip to world wonders, serene backwaters, royal palaces of Rajasthan, and
+              spiritual havens along the holy Ganges.</p>
+            <a href="tourism.html" class="btn btn-secondary" style="width: 100%;">View Places ➔</a>
+          </div>
+        </article>
+
+        <!-- Wildlife Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/bengal_tiger.jpg" alt="Royal Bengal Tiger Wildlife">
+            <span class="card-tag">Sanctuaries</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Flora & Wildlife</h3>
+            <p class="card-text">Home to 70% of the world's wild tigers, majestic elephants, snow leopards, and over 100
+              national wildlife reserves.</p>
+            <a href="about.html" class="btn btn-secondary" style="width: 100%;">Discover Wildlife ➔</a>
+          </div>
+        </article>
+
+        <!-- Festivals Card -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/diwali_festival.jpg" alt="Diwali Festival Lights">
+            <span class="card-tag">Celebrations</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Festivals of Light & Joy</h3>
+            <p class="card-text">Experience the magic of Diwali, Holi, Onam, and Durga Puja where unity in diversity
+              shines brightest.</p>
+            <a href="gallery.html" class="btn btn-secondary" style="width: 100%;">View Photo Gallery ➔</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED SPOTLIGHT SECTION -->
+    <section class="section"
+      style="background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-glass);">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured Spotlight</span>
+        <h2 class="section-title">The Golden Triangle & Beyond</h2>
+        <p class="section-description">
+          The ultimate introductory journey linking Delhi's historical heart, Agra's romantic marble, and Jaipur's royal
+          pink palaces.
+        </p>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center;">
+        <div class="reveal">
+          <img src="images/hero_taj_mahal.jpg" alt="Taj Mahal Sunset"
+            style="border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+        <div class="reveal">
+          <h3
+            style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1rem; color: var(--gold-accent);">
+            A Symphony in White Marble
+          </h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.8;">
+            Constructed over 22 years by 20,000 artisans, the Taj Mahal changes hue throughout the day — soft pink in
+            the dawn, brilliant ivory at noon, and shimmering gold under full moon light.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="tourism.html" class="btn btn-gold" data-destination="taj">View Destination Details</a>
+            <a href="gallery.html" class="btn btn-secondary">Open Lightbox</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- DESTINATION MODAL CONTAINER -->
+  <div id="destination-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <img id="modal-img" class="modal-header-img" src="" alt="Destination preview">
+      <div class="modal-body">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: 0.25rem;"></h2>
+        <p id="modal-region"
+          style="color: var(--saffron-main); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.75rem;"></p>
+        <p id="modal-vibe"
+          style="color: var(--gold-accent); font-size: 0.9rem; font-weight: 600; margin-bottom: 1.25rem;"></p>
+        <p id="modal-desc" style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;"></p>
+        <a href="contact.html" class="btn btn-primary">Plan A Trip Here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Celebrating the infinite heritage, natural grandeur, and warm hospitality of India — <em>Atithi Devo
+            Bhava</em> (The guest is god).</p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="history.html">History & Culture</a></li>
+          <li><a href="cuisine.html">Regional Cuisine</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Explore Tourism</h4>
+        <ul class="footer-links">
+          <li><a href="tourism.html">Top Destinations</a></li>
+          <li><a href="gallery.html">Photo Showcase</a></li>
+          <li><a href="contact.html">Travel Assistance</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">National Identity</h4>
+        <ul class="footer-links">
+          <li><a href="about.html#symbols">National Symbols</a></li>
+          <li><a href="about.html#geography">Geographic Map</a></li>
+          <li><a href="history.html#timeline">Timeline of Eras</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase. Created for educational & cultural presentation.</p>
+      <p>Built with Vanilla HTML5, CSS3, & JS. Zero backend dependencies.</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+
+</html>

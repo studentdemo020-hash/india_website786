@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism & Destinations — Explore Wonders of India</title>
+  <meta name="description" content="Discover top travel destinations in India: Taj Mahal Agra, Kerala Backwaters, Rajasthan Palaces, Varanasi Ghats, and Ranthambore wildlife.">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Global Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About India</a></li>
+          <li><a href="history.html" class="nav-link">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link active">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About India</a>
+    <a href="history.html" class="mobile-nav-link">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link active">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('images/kerala_backwaters.jpg'); min-height: 55vh;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">✈️ Wanderlust Unbound</div>
+        <h1 class="hero-title">Unforgettable <span>Destinations</span></h1>
+        <p class="hero-subtitle">
+          Whether seeking ancient spiritual wisdom, peaceful palm groves, or thrilling tiger safaris — discover your dream journey in India.
+        </p>
+      </div>
+    </section>
+
+    <!-- DESTINATION CARDS GRID WITH INTERACTIVE MODALS -->
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Curated Travel Catalog</span>
+        <h2 class="section-title">Iconic Travel Experiences</h2>
+        <p class="section-description">Click any destination card to open deep-dive details and travel tips.</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- Dest 1 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/hero_taj_mahal.jpg" alt="Taj Mahal Agra">
+            <span class="card-tag">Agra • Heritage</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Taj Mahal & Mughal Forts</h3>
+            <p class="card-text">Agra, Uttar Pradesh. Marvel at the world's grandest marble monument of eternal love and explore Akbar's imperial Red Fort.</p>
+            <button class="btn btn-gold" data-destination="taj">Explore Taj Mahal Details ➔</button>
+          </div>
+        </article>
+
+        <!-- Dest 2 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/kerala_backwaters.jpg" alt="Kerala Backwaters Houseboat">
+            <span class="card-tag">Kerala • Nature</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Alleppey Houseboat Backwaters</h3>
+            <p class="card-text">Alleppey, Kerala. Drift lazily along palm-shaded lagoons on a luxury hand-crafted houseboat with authentic banana-leaf lunches.</p>
+            <button class="btn btn-gold" data-destination="kerala">Explore Kerala Details ➔</button>
+          </div>
+        </article>
+
+        <!-- Dest 3 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/ancient_temple.jpg" alt="Ancient Hampi Temples">
+            <span class="card-tag">Karnataka • Ruins</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hampi & Madurai Stone Temples</h3>
+            <p class="card-text">Karnataka & Tamil Nadu. Wander through surreal boulder landscapes, chariot stone sculptures, and soaring rainbow temple gopurams.</p>
+            <button class="btn btn-gold" data-destination="temple">Explore Temple Details ➔</button>
+          </div>
+        </article>
+
+        <!-- Dest 4 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/bengal_tiger.jpg" alt="Ranthambore Tiger Safari">
+            <span class="card-tag">Rajasthan • Wildlife</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ranthambore Tiger Safari</h3>
+            <p class="card-text">Sawai Madhopur, Rajasthan. Embark on open-air jeep safaris through ancient dry-deciduous forests to spot wild Royal Bengal Tigers.</p>
+            <button class="btn btn-gold" data-destination="tiger">Explore Safari Details ➔</button>
+          </div>
+        </article>
+
+        <!-- Dest 5 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/diwali_festival.jpg" alt="Varanasi Ghats Ganga Aarti">
+            <span class="card-tag">Varanasi • Spiritual</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sacred Ghats of Varanasi</h3>
+            <p class="card-text">Varanasi, Uttar Pradesh. Witness dusk Ganga Aarti ceremonies with brass oil lamps, incense, and floating flower offerings along the holy river.</p>
+            <button class="btn btn-gold" data-destination="diwali">Explore Varanasi Details ➔</button>
+          </div>
+        </article>
+
+        <!-- Dest 6 -->
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/cuisine_spread.jpg" alt="Culinary Food Capital Tours">
+            <span class="card-tag">Delhi & Jaipur • Culinary</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Delhi & Jaipur Street Food Tours</h3>
+            <p class="card-text">Delhi, Rajasthan, Kochi. Walk through centuries-old spice markets in Chandni Chowk and taste royal thali banquets in Pink City palaces.</p>
+            <button class="btn btn-gold" data-destination="thali">Explore Culinary Tour ➔</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- DESTINATION DETAILS MODAL -->
+  <div id="destination-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <img id="modal-img" class="modal-header-img" src="" alt="Destination image">
+      <div class="modal-body">
+        <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: 0.25rem;"></h2>
+        <p id="modal-region" style="color: var(--saffron-main); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.75rem;"></p>
+        <p id="modal-vibe" style="color: var(--gold-accent); font-size: 0.9rem; font-weight: 600; margin-bottom: 1.25rem;"></p>
+        <p id="modal-desc" style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;"></p>
+        <a href="contact.html" class="btn btn-primary">Inquire / Plan Trip</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Your portal to exploring the extraordinary destinations of India.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="history.html">History & Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="tourism.html">Destinations</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Travel Inquiry</a></li>
+          <li><a href="contact.html#faqs">Travel FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History & Culture — 5,000 Years of Heritage | Incredible India</title>
+  <meta name="description" content="Explore an interactive timeline of Indian history from ancient Indus Valley to modern Republic, classical dance, music, and vibrant cultural festivals.">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-icon">🇮🇳</span>
+        <span>INCREDIBLE INDIA</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About India</a></li>
+          <li><a href="history.html" class="nav-link active">History & Culture</a></li>
+          <li><a href="cuisine.html" class="nav-link">Cuisine</a></li>
+          <li><a href="tourism.html" class="nav-link">Destinations</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">☀️</button>
+        <button class="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Nav -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About India</a>
+    <a href="history.html" class="mobile-nav-link active">History & Culture</a>
+    <a href="cuisine.html" class="mobile-nav-link">Cuisine</a>
+    <a href="tourism.html" class="mobile-nav-link">Destinations</a>
+    <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('images/ancient_temple.jpg'); min-height: 55vh;">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <div class="hero-badge">📜 Five Millennia of Tapestry</div>
+        <h1 class="hero-title">History & <span>Culture</span></h1>
+        <p class="hero-subtitle">
+          From ancient urban planning of Mohenjo-Daro to golden imperial dynasties, spiritual philosophies, and classical performing arts that resonate across generations.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE HISTORICAL TIMELINE -->
+    <section id="timeline" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Interactive Chronology</span>
+        <h2 class="section-title">Timeline of Key Historical Eras</h2>
+        <p class="section-description">Filter by era to explore the events that shaped Indian civilization.</p>
+      </div>
+
+      <div class="timeline-tabs reveal">
+        <button class="tab-btn active" data-era="all">All Eras</button>
+        <button class="tab-btn" data-era="ancient">Ancient Era (3300 BCE – 500 CE)</button>
+        <button class="tab-btn" data-era="medieval">Medieval Dynasties (500 – 1757 CE)</button>
+        <button class="tab-btn" data-era="modern">Independence Movement (1857 – 1947)</button>
+        <button class="tab-btn" data-era="republic">Modern Republic (1947 – Present)</button>
+      </div>
+
+      <div class="timeline reveal">
+        <!-- Event 1 -->
+        <div class="timeline-item" data-era="ancient">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">c. 3300 – 1300 BCE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Indus Valley Civilization</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              One of the world's earliest urban civilizations (Harappa and Mohenjo-Daro), famous for sophisticated grid town planning, baked brick houses, drainage systems, and metallurgy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="timeline-item" data-era="ancient">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">c. 322 – 185 BCE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">The Maurya Empire & Emperor Ashoka</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Chandragupta Maurya unified most of the subcontinent. Emperor Ashoka converted to Buddhism, championing non-violence (Ahimsa) and spreading edicts across stone pillars.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="timeline-item" data-era="ancient">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">c. 319 – 543 CE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Gupta Empire — Golden Age of Science & Arts</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Known as the Golden Age of India. Aryabhata invented the concept of zero and calculated pi; Kalidasa authored classic Sanskrit poetry; Ajanta cave paintings were created.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="timeline-item" data-era="medieval">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">c. 1336 – 1646 CE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Vijayanagara Empire & Chola Naval Power</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Southern India flourished with monumental granite temple architecture in Hampi, while Chola maritime expeditions extended Indian influence across Southeast Asia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="timeline-item" data-era="medieval">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1526 – 1857 CE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Mughal Empire & Monumental Wonders</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Emperors Akbar and Shah Jahan presided over an era of Indo-Islamic architectural marvels, constructing the Taj Mahal, Red Fort Agra, and Fatehpur Sikri.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="timeline-item" data-era="modern">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1857 – 1947 CE</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Freedom Struggle & Non-Violent Movement</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Mahatma Gandhi led millions in peaceful Satyagraha (civil disobedience) and Dandi Salt March, inspiring global civil rights movements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event 7 -->
+        <div class="timeline-item" data-era="republic">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">August 15, 1947 – Present</div>
+            <h3 style="font-family: var(--font-heading); color: var(--text-main); font-size: 1.25rem;">Independence & Sovereign Democratic Republic</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Enacted the world's longest written Constitution on January 26, 1950. Today, India is a global economic power and leader in space exploration (Chandrayaan & Mangalyaan).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLASSICAL ARTS & FESTIVALS SECTION -->
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="section-tag">Living Traditions</span>
+        <h2 class="section-title">Classical Arts & Major Festivals</h2>
+        <p class="section-description">Celebrating expression, devotion, and community harmony.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/diwali_festival.jpg" alt="Diwali Festival of Lights">
+            <span class="card-tag">Festival</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Diwali & Holi</h3>
+            <p class="card-text">Diwali celebrates the triumph of light over darkness with clay lamps and fireworks. Holi marks spring with joyous bursts of vibrant colored powders (gulal).</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/ancient_temple.jpg" alt="Classical Dance Arts">
+            <span class="card-tag">Performing Arts</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">8 Classical Dance Forms</h3>
+            <p class="card-text">From Bharatanatyam (Tamil Nadu) and Kathak (North India) to Kathakali (Kerala) — intricate mudras (hand gestures) tell ancient mythological epics.</p>
+          </div>
+        </article>
+
+        <article class="glass-card reveal">
+          <div class="card-img-wrapper">
+            <img src="images/hero_taj_mahal.jpg" alt="Indian Architecture">
+            <span class="card-tag">Architecture</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sacred & Royal Architecture</h3>
+            <p class="card-text">Dravidian rock-cut temples, Rajput fortresses perched on cliffs, and symmetrical Mughal gardens showcase extraordinary craftsmanship.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="nav-brand-icon">🇮🇳</span>
+          <span>INCREDIBLE INDIA</span>
+        </div>
+        <p>Preserving and celebrating India's 5,000 years of living history.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About India</a></li>
+          <li><a href="history.html">History & Culture</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="cuisine.html">Regional Cuisine</a></li>
+          <li><a href="tourism.html">Destinations</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faqs">Travel FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Incredible India Static Showcase.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
